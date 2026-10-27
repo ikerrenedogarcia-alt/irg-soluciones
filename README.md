@@ -8,25 +8,27 @@ Web de una sola página para IRG Soluciones. Es HTML, CSS y JavaScript sencillos
 - `css/style.css` — colores, tamaños y diseño.
 - `js/script.js` — detalles pequeños (año del pie de página, animación al hacer scroll).
 - `assets/favicon.svg` — el icono que aparece en la pestaña del navegador.
+- `legal/aviso-legal.html`, `legal/privacidad.html`, `legal/cookies.html`, `legal/terminos.html` — páginas legales (ver más abajo).
 
-## Cómo subirla a GitHub y Vercel (igual que con tu app de hábitos)
+## ⚠️ Antes de publicarla: rellena tus datos legales
 
-1. Crea un repositorio nuevo en GitHub, por ejemplo `irg-soluciones`.
-2. Desde esta carpeta, en la terminal:
-   ```
-   git init
-   git add .
-   git commit -m "Primera versión de la web"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/irg-soluciones.git
-   git push -u origin main
-   ```
-3. Entra en [vercel.com](https://vercel.com) con tu cuenta de GitHub.
-4. Pulsa "Add New… → Project" y elige el repositorio `irg-soluciones`.
-5. No hace falta tocar nada en la configuración (es una web estática). Pulsa "Deploy".
-6. En un par de minutos te da una URL (algo como `irg-soluciones.vercel.app`). Esa es la que pones en la biografía de Instagram.
+En tres páginas (`legal/aviso-legal.html`, `legal/privacidad.html` y `legal/terminos.html`) he dejado resaltado en amarillo tu **NIF/DNI** y tu **dirección fiscal**. No los he rellenado yo porque son datos personales sensibles. Es obligatorio por ley (LSSI-CE) tenerlos publicados si cobras por tus servicios, así que:
 
-Cada vez que subas cambios a GitHub (`git add .`, `git commit`, `git push`), Vercel actualiza la web sola.
+1. Abre esos 3 archivos con un editor de texto.
+2. Busca `[Tu NIF/DNI]` y `[Tu dirección fiscal, Palencia]` (aparecen varias veces).
+3. Sustitúyelos por tus datos reales.
+
+Si todavía no estás dado de alta como autónomo y vas a empezar a cobrar por estos servicios, es el momento de regularizarlo — pregúntale a una gestoría si tienes dudas.
+
+## Repositorio y despliegue
+
+Esta web ya está subida a GitHub en **https://github.com/ikerrenedogarcia-alt/irg-soluciones**, con el mismo flujo que usamos para tu app de hábitos. Para subir cambios nuevos:
+```
+git add .
+git commit -m "Actualizo textos"
+git push
+```
+Vercel se encarga del resto (si ya está conectado; si no, en la propia conversación te confirmo el estado del despliegue).
 
 ## Cómo cambiar los textos o precios tú solo
 
